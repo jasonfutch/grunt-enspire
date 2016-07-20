@@ -625,7 +625,7 @@ module.exports = function(grunt) {
             ngAnnotate:{
                 dist:{
                     files:{
-                        "_temp-grunt/ng.js": ['dev/assets/js/**/*.js','src/js/**/*.js','_temp-grunt/templates.js']
+                        "_temp-grunt/ng.js": ['dev/assets/js/**/*.js','src/js/**/*.js']
                     }
                 }
             },
@@ -671,7 +671,7 @@ module.exports = function(grunt) {
             ngtemplates:{
                 dist: {
                     src: ng_templates,
-                    dest: '_temp-grunt/templates.js',
+                    dest: 'dist/assets/js/templates.js',
                     options: {
                         module:'app',
                         prefix: '',
